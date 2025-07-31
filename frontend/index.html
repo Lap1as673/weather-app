@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погодный сервис</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Погодный сервис</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Введите город...">
+            <button id="search-btn">Поиск</button>
+        </div>
+        <div id="weather-card" class="weather-card hidden">
+            <h2 id="city-name">Город</h2>
+            <div class="weather-main">
+                <img id="weather-icon" src="" alt="Weather Icon">
+                <div id="temperature">0°C</div>
+            </div>
+            <div id="weather-description">Описание</div>
+            <div class="weather-details">
+                <div>Ощущается: <span id="feels-like">0°C</span></div>
+                <div>Влажность: <span id="humidity">0%</span></div>
+                <div>Ветер: <span id="wind">0 м/с</span></div>
+            </div>
+        </div>
+        <div id="error-message" class="error hidden"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
